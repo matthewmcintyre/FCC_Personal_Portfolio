@@ -1,6 +1,7 @@
 html, body{
   text-align: center;
   font-family: 'Bitter', serif;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
