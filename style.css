@@ -1,7 +1,6 @@
 html, body{
   text-align: center;
   font-family: 'Bitter', serif;
-  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -63,18 +62,19 @@ h1{
   padding:10px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-template-rows: repeat(2, minmax(200px, 1fr));
-  grid-gap:20px;
+  grid-gap:40px;
   font-size:16px;
 }
 .project-tile{
   display:block;
   justify-self:center;
-  border: 2px solid #1C6EA4;
+  
   object-fit:cover;
 }
 img{
   width:100%;
   display:block;
+  border: 1px solid black;
 }
 #about-me{
   background: #DDA15E;
@@ -110,7 +110,8 @@ footer{
     padding:4px;
   }
   #projects{
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     padding:10px;
     font-size:7px;
   }
@@ -130,7 +131,8 @@ footer{
     padding:6px;
   }
   #projects{
-    grid-template-columns: repeat(autofill, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    grid-template-rows: repeat(2, minmax(140px, 1fr));
     padding:10px;
     font-size:10px;
   }
