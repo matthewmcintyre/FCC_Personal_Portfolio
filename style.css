@@ -67,7 +67,6 @@ nav i:hover{
 .project-tile{
   display:block;
   justify-self:center;
-  
   object-fit:cover;
 }
 img{
@@ -132,6 +131,16 @@ footer{
     grid-template-rows: repeat(2, minmax(140px, 1fr));
     padding:10px;
     font-size:10px;
+  }
+}
+@media (min-width: 768px){
+
+  .project-tile{
+    display:block;
+    justify-self:center;
+    margin-top: 65px;
+    padding:35px;
+    object-fit:cover;
   }
 }
 .fa-arrow-down{
