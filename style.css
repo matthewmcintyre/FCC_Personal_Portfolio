@@ -22,7 +22,7 @@ nav li{
   float: left;
   font-size:20px;
 }
-nav li:hover{
+.leftLinks li:hover{
   background-color: #283618;
 }
 a{
@@ -46,13 +46,11 @@ nav i:hover{
   display: flex;
   height: 100vh;
   justify-content: center;
-  flex-direction:column;
+  align-items: center;
+  width:100%;
 }
 #welcome-section{
   background: #FEFAE0;
-}
-h1{
-  align-self: center;
 }
 #projects{
   height: 100vh;
@@ -93,7 +91,6 @@ footer{
 #footer-content{
   align-self:center;
 }
-
 @media (max-width: 480px) {
   
   #profile-link{
@@ -117,7 +114,6 @@ footer{
     font-size:7px;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   
   #profile-link{
@@ -136,5 +132,32 @@ footer{
     grid-template-rows: repeat(2, minmax(140px, 1fr));
     padding:10px;
     font-size:10px;
+  }
+}
+.fa-arrow-down{
+  color:#606C38;
+}
+.arrow {
+  position:absolute;
+  align-self: flex-end;
+  padding-bottom:10px;
+}
+.arrow :hover{
+  color:#3B482D;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
