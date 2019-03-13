@@ -169,7 +169,7 @@ footer {
   #projects {
     padding: 0px;
     grid-template-columns: repeat(3, minmax(240px, 1fr));
-    grid-template-rows: repeat(2, minmax(330px, 200px));
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
     align-items: center;
     grid-gap: 0px;
     font-size: 1.4vh;
